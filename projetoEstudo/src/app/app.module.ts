@@ -5,12 +5,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrimeiroComponentComponent } from './primeiro-component/primeiro-component.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
-    PrimeiroComponentComponent
-  ],
+    PrimeiroComponentComponent,
+      DataBindingComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
