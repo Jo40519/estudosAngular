@@ -9,14 +9,16 @@ import { PrimeiroComponentComponent } from './primeiro-component/primeiro-compon
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { InputPropertiesComponent } from './input-properties/input-properties.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
     PrimeiroComponentComponent,
     DataBindingComponent,
-    InputPropertiesComponent
-   ],
+    InputPropertiesComponent,
+    OutputPropertyComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
