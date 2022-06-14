@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
   public valorAtual: string = '';
-  public valorSalvo: string =''
+  public valorSalvo: string = '';
+  public isMouseOver: boolean = false
+
+  public nomeDoCurso: string = 'Angular'
+
+
   constructor() { }
 
   ngOnInit() {
@@ -24,5 +29,13 @@ export class DataBindingComponent implements OnInit {
 
   salvarValor(valor: string) {
     this.valorSalvo = valor
+  }
+
+  onMouseOverOut() {
+    this.isMouseOver = !this.isMouseOver
+  }
+
+  onMouseOut() {
+
   }
 }
