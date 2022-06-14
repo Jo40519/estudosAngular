@@ -9,6 +9,7 @@ export class DataBindingComponent implements OnInit {
   public valorAtual: string = '';
   public valorSalvo: string = '';
   public isMouseOver: boolean = false
+  public mudouValorMesmo: number = 10293
 
   public nomeDoCurso: string = 'Angular'
 

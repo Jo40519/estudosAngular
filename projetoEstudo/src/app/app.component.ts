@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'projetoEstudo';
+  valorInicial = 5
+  deletarCiclo: boolean = false
+
+
+  mudarValor() {
+    this.valorInicial++
+  }
+
+  destruirCiclo() {
+    this.deletarCiclo = true
+  }
 }
