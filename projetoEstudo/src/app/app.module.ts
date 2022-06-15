@@ -13,13 +13,13 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
 import { CicloComponent } from './ciclo/ciclo.component';
 
 @NgModule({
-  declarations: [				
+  declarations: [					
     AppComponent,
     PrimeiroComponentComponent,
     DataBindingComponent,
     InputPropertiesComponent,
     OutputPropertyComponent,
-      CicloComponent
+      CicloComponent,
    ],
   imports: [
     BrowserModule,
