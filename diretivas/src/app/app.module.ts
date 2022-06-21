@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DiretivaNgIfComponent } from './diretiva-ngIf/diretiva-ngIf.component';
+import { DiretivaNgSwitchComponent } from './diretivaNgSwitch/diretivaNgSwitch.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [			
     AppComponent,
-      DiretivaNgIfComponent
+      DiretivaNgIfComponent,
+      DiretivaNgSwitchComponent
    ],
   imports: [
     BrowserModule,
