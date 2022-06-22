@@ -9,5 +9,15 @@
 >
   Mudar atributo ativo
 </button>
-
+<button
+  [ngStyle]="{
+    backgroundColor: ativo ? 'blue' : 'gray',
+    color: ativo ? 'white' : 'black',
+    fontWeight: ativo ? 'bold' : 'normal',
+    fontSize: tamanhoFont + 'px'
+  }"
+  (click)="ativar()"
+>
+  Mudar atributo ativo
+</button>
 <input type="text" [(ngModel)]="tamanhoFont" />
