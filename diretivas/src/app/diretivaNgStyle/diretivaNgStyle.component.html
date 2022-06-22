@@ -1,0 +1,13 @@
+<h1>Diretiva NgStyle</h1>
+
+<button
+  [style.backgroundColor]="ativo ? 'blue' : 'gray'"
+  [style.color]="ativo ? 'white' : 'black'"
+  [style.fontWeight]="ativo ? 'bold' : 'normal'"
+  [style.fontSize]="tamanhoFont + 'px'"
+  (click)="ativar()"
+>
+  Mudar atributo ativo
+</button>
+
+<input type="text" [(ngModel)]="tamanhoFont" />
