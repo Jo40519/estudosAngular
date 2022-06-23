@@ -1,3 +1,4 @@
+import { FundoAmareloDirective } from './directives/fundo-amarelo.directive';
 import { ExemploNgContendComponent } from './exemplo-ngContend/exemplo-ngContend.component';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
@@ -12,17 +13,20 @@ import { DiretivaNgForComponent } from './diretivaNgFor/diretivaNgFor.component'
 import { DiretivaNgClassComponent } from './diretivaNgClass/diretivaNgClass.component';
 import { DiretivaNgStyleComponent } from './diretivaNgStyle/diretivaNgStyle.component';
 import { OperadorElvisComponent } from './operadorElvis/operadorElvis.component';
+import { DiretivasCustomizadasComponent } from './diretivasCustomizadas/diretivasCustomizadas.component';
 
 @NgModule({
-  declarations: [								
+  declarations: [									
     AppComponent,
       DiretivaNgIfComponent,
       DiretivaNgSwitchComponent,
       DiretivaNgForComponent,
       DiretivaNgClassComponent,
       DiretivaNgStyleComponent,
-    OperadorElvisComponent,
-      ExemploNgContendComponent
+      OperadorElvisComponent,
+      ExemploNgContendComponent,
+      DiretivasCustomizadasComponent,
+      FundoAmareloDirective
    ],
   imports: [
     BrowserModule,
