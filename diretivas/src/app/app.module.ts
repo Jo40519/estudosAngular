@@ -1,3 +1,4 @@
+import { HighlightMouseDirective } from './directives/highlight-mouse.directive';
 import { FundoAmareloDirective } from './directives/fundo-amarelo.directive';
 import { ExemploNgContendComponent } from './exemplo-ngContend/exemplo-ngContend.component';
 import { FormsModule } from '@angular/forms';
@@ -18,16 +19,17 @@ import { DiretivasCustomizadasComponent } from './diretivasCustomizadas/diretiva
 @NgModule({
   declarations: [									
     AppComponent,
-      DiretivaNgIfComponent,
-      DiretivaNgSwitchComponent,
-      DiretivaNgForComponent,
-      DiretivaNgClassComponent,
-      DiretivaNgStyleComponent,
-      OperadorElvisComponent,
-      ExemploNgContendComponent,
-      DiretivasCustomizadasComponent,
-      FundoAmareloDirective
-   ],
+    DiretivaNgIfComponent,
+    DiretivaNgSwitchComponent,
+    DiretivaNgForComponent,
+    DiretivaNgClassComponent,
+    DiretivaNgStyleComponent,
+    OperadorElvisComponent,
+    ExemploNgContendComponent,
+    DiretivasCustomizadasComponent,
+    FundoAmareloDirective,
+    HighlightMouseDirective
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
