@@ -1,3 +1,4 @@
+import { NgElseDirective } from './directives/ngElse.directive';
 import { HighlightMouseDirective } from './directives/highlight-mouse.directive';
 import { FundoAmareloDirective } from './directives/fundo-amarelo.directive';
 import { ExemploNgContendComponent } from './exemplo-ngContend/exemplo-ngContend.component';
@@ -15,6 +16,7 @@ import { DiretivaNgClassComponent } from './diretivaNgClass/diretivaNgClass.comp
 import { DiretivaNgStyleComponent } from './diretivaNgStyle/diretivaNgStyle.component';
 import { OperadorElvisComponent } from './operadorElvis/operadorElvis.component';
 import { DiretivasCustomizadasComponent } from './diretivasCustomizadas/diretivasCustomizadas.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [									
@@ -28,7 +30,9 @@ import { DiretivasCustomizadasComponent } from './diretivasCustomizadas/diretiva
     ExemploNgContendComponent,
     DiretivasCustomizadasComponent,
     FundoAmareloDirective,
-    HighlightMouseDirective
+    HighlightMouseDirective,
+    HighlightDirective,
+    NgElseDirective
   ],
   imports: [
     BrowserModule,
