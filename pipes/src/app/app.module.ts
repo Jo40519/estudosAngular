@@ -1,3 +1,6 @@
+import { FiltroArrayImpuroPipe } from './filtroArrayImpuro.pipe';
+import { FormsModule } from '@angular/forms';
+import { FiltroArrayPipe } from './filtroArray.pipe';
 import { SettingsService } from './settings.service';
 import { CamelCasePipe } from './camel-case.pipe';
 import { LOCALE_ID, NgModule } from '@angular/core';
@@ -11,11 +14,14 @@ import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.componen
   declarations: [
       AppComponent,
       CamelCasePipe,
-      ExemplosPipesComponent
+      ExemplosPipesComponent,
+      FiltroArrayPipe,
+      FiltroArrayImpuroPipe
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     // {
