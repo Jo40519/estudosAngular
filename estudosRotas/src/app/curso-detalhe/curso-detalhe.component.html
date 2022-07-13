@@ -1,0 +1,17 @@
+<p>Lista Cursos</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let curso of cursos">
+      <th scope="row">{{curso.id}}</th>
+      <th [routerLink]="['/curso', curso.id]" scope="row">{{curso.nome}}</th>
+
+    </tr>
+  </tbody>
+</table>
