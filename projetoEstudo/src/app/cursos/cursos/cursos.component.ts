@@ -9,14 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class CursosComponent implements OnInit {
   public nomePortal: string;
   public cursos: Array<string> = []
-  constructor(private cursoService: CursosService) { 
+  constructor(private cursoService: CursosService) {
     this.nomePortal = 'https://loiane.training'
 
     this.cursos =  this.cursoService.getCursos()
   }
 
   ngOnInit() {
-   
+
   }
 
 }
