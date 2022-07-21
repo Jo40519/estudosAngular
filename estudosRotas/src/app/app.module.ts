@@ -5,23 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { CursosComponent } from './cursos/cursos.component';
-import { CursoDetalheComponent } from './cursos/curso-detalhe/curso-detalhe.component';
 import { CursosRotasService } from './cursos/curso-detalhe/cursos.service';
-import { CursoNaoEncontradoComponent } from './cursos/cursoNaoEncontrado/cursoNaoEncontrado.component';
+import { CursosModule } from './../../../projetoEstudo/src/app/cursos/cursos.module';
+import { RouterModule } from '@angular/router';
+import { AlunosModule } from './alunos/alunos.module';
 
 @NgModule({
   declarations: [
     AppComponent,
       HomeComponent,
       LoginComponent,
-      CursosComponent,
-      CursoDetalheComponent,
-      CursoNaoEncontradoComponent
+      // CursosComponent,
+      // CursoDetalheComponent,
+      // CursoNaoEncontradoComponent
    ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+  BrowserModule,
+    CursosModule,
+    AlunosModule,
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [CursosRotasService],
   bootstrap: [AppComponent]

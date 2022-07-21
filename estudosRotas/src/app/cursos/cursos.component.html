@@ -1,6 +1,7 @@
+
 <p>Lista Cursos</p>
 
-<p>Página:{{pagina}</p>
+<p>Página:{{pagina}}</p>
 <table class="table">
   <thead>
     <tr>
@@ -11,7 +12,7 @@
   <tbody>
     <tr *ngFor="let curso of cursos">
       <th scope="row">{{curso.id}}</th>
-      <th [routerLink]="['/curso', curso.id]"  scope="row">{{curso?.nome}}</th>
+      <!-- <th [routerLink]="['/curso', curso.id]"  scope="row">{{curso?.nome}}</th> -->
 
     </tr>
   </tbody>
