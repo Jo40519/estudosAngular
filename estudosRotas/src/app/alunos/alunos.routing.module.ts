@@ -7,20 +7,23 @@ import { AlunosComponent } from "./alunos.component";
 const alunosRoute: Routes = [
   {
     path: 'alunos',
-    component: AlunosComponent
+    component: AlunosComponent,
+    children: [
+      {
+        path:'novo',
+        component: AlunoFormComponent
+      },
+      {
+        path: ':id',
+        component: AlunosDetalheComponent
+      },
+      {
+        path: ':id/edit',
+        component: AlunoFormComponent
+      },
+    ]
   },
-  {
-    path:'alunos/novo',
-    component: AlunoFormComponent
-  },
-  {
-    path: 'alunos/:id',
-    component: AlunosDetalheComponent
-  },
-  {
-    path: 'alunos/:id/edit',
-    component: AlunoFormComponent
-  },
+
 ];
 
 @NgModule({

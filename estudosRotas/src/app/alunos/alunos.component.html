@@ -1,3 +1,17 @@
-<p>
-  alunos works!
-</p>
+<p>Lista de Alunos</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let aluno of alunos">
+    <tr>
+      <th scope="row">1</th>
+      <td>{{aluno.nome}}</td>
+    </tr>
+  </tbody>
+</table>
+<router-outlet></router-outlet>
